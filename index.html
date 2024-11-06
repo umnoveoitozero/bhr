@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Ícones e Rodapé</title>
+    <link rel="stylesheet" href="https://bhrcorretora.com.br/wp-content/cache/minify/a5ff7.css">
+    <style>
+        /* Estilos principais */
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        /* Logo no topo */
+        .logo-header {
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .logo-header img {
+            height: 80px;
+            object-fit: contain;
+        }
+        /* Ícones centralizados */
+        .icon-container {
+            display: flex;
+            gap: 100px;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            width: 250px;
+            height: 250px;
+            background-color: #2a77bf;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-decoration: none;
+        }
+        .icon img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+        .icon-label {
+            text-align: center;
+            font-size: 25px;
+            color: #333;
+            margin-top: 10px;
+        }
+        /* Estilo do rodapé */
+        footer {
+            background-color: #2a77bf;
+            color: white;
+            padding: 40px 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer h4 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #fff;
+        }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .footer-sections {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .footer-column {
+            width: 900px;
+            text-align: center;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-column li {
+            margin-bottom: 5px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .social-icons a {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background-color: #1f5b96;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+        .social-icons a:hover {
+            background-color: #134275;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com a Logo -->
+    <div class="logo-header">
+        <a href="https://bhrcorretora.com.br">
+            <img src="https://bhrcorretora.com.br/wp-content/uploads/2023/01/LOGO_BHR_nova_horizontal-TRANSPARENTE.png" alt="BHR Seguros, Benefícios e Consórcios">
+        </a>
+    </div>
+
+    <!-- Corpo com Ícones Centralizados -->
+    <div class="icon-container">
+        <div>
+            <a href="https://porto.vc/residencia_essencial_475232fbff1d49638867a022de2b4fac" class="icon" target="_blank">
+                <img src="C:\Users\felix\Desktop\BHR\seguro_casa.png" alt="Seguro Residencial">
+            </a>
+            <div class="icon-label">Seguro Residencial</div>
+        </div>
+        <div>
+            <a href="https://wwws.portoseguro.com.br/vendaonline/vidamaissimples/home.ns?cod=23d1ded715844de5a161f8c1927c80a0&utm_source=U0215J&utm_medium=geradorLinks&utm_campaign=GeradordeLinks_S440YJ&utm_content=BHR_ASS_E_CORRETORA_DE_SEGUROS&origem=" class="icon" target="_blank">
+                <img src="C:\Users\felix\Desktop\BHR\porto-seguro.png" alt="Seguro Vida">
+            </a>
+            <div class="icon-label">Seguro Vida</div>
+        </div>
+		<div>
+            <a href="C:\Users\felix\Downloads\Petlove_Poc Whats_Portfólio Cliente_OUT24_V2.pdf" class="icon" target="_blank">
+                <img src="C:\Users\felix\Desktop\BHR\seguro_pet.png" alt="Seguro Vida">
+            </a>
+            <div class="icon-label">Seguro Pet</div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-sections">
+            <!-- Informações de Contato -->
+            <div class="footer-column">
+                <h4>Contato</h4>
+                <ul>
+                    <li>Telefone: (31) 2111-0000</li>
+                    <li>Email: contato@bhrcorretora.com.br</li>
+                </ul>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="footer-column">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2023 BHR Seguros, Benefícios e Consórcios - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/5c2b21ddcb.js" crossorigin="anonymous"></script>
+    <script src="https://bhrcorretora.com.br/wp-content/cache/minify/8bee5.js"></script>
+</body>
+</html>
