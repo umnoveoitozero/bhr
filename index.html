@@ -1,58 +1,128 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página com Ícones e Rodapé</title>
     <link rel="stylesheet" href="https://bhrcorretora.com.br/wp-content/cache/minify/a5ff7.css">
-   <style>
-    /* Estilos principais */
-    body, html {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        font-family: Arial, sans-serif;
-    }
-
-    /* Media query para dispositivos móveis */
-    @media (max-width: 768px) {
-        .icon-container {
+    <style>
+        /* Estilos principais */
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
             flex-direction: column;
-            gap: 20px;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
         }
-
+        /* Logo no topo */
+        .logo-header {
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .logo-header img {
+            height: 80px;
+            object-fit: contain;
+        }
+        /* Ícones centralizados */
+        .icon-container {
+            display: flex;
+            gap: 100px;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
         .icon {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
+            background-color: #2a77bf;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-decoration: none;
         }
-
+        .icon img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
         .icon-label {
-            font-size: 18px;
+            text-align: center;
+            font-size: 25px;
+            color: #333;
+            margin-top: 10px;
         }
-
-        /* Estilo do rodapé para mobile */
-        .footer-sections {
+        /* Estilo do rodapé */
+        footer {
+            background-color: #2a77bf;
+            color: white;
+            padding: 40px 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
             flex-direction: column;
             align-items: center;
         }
-
-        .footer-column {
+        footer h4 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            color: #fff;
+        }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .footer-sections {
+            display: flex;
+            justify-content: space-around;
             width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .footer-column {
+            width: 900px;
             text-align: center;
-            padding: 10px;
         }
-
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-column li {
+            margin-bottom: 5px;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
         .social-icons a {
-            width: 30px;
-            height: 30px;
-            font-size: 16px;
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background-color: #1f5b96;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            transition: background-color 0.3s;
         }
-    }
-</style>
-
+        .social-icons a:hover {
+            background-color: #134275;
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho com a Logo -->
@@ -114,3 +184,4 @@
     <script src="https://bhrcorretora.com.br/wp-content/cache/minify/8bee5.js"></script>
 </body>
 </html>
+
